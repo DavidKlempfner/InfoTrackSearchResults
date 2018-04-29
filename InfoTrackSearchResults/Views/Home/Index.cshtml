@@ -1,0 +1,27 @@
+﻿@using InfoTrackSearchResults.Resources
+@model InfoTrackSearchResults.Models.InputFields
+@{
+    ViewBag.Title = Strings.HomePageTitle;
+}
+
+<h2>@Strings.HomePageTitle</h2>
+
+<div class="panel-body">
+    @using (Html.BeginForm("GetResults", "Home"))
+    {
+        @Html.ValidationSummary()
+        <div>
+            <label>Key Words:</label>
+        </div>
+        <div>
+            @Html.TextBoxFor(x => x.KeyWords)
+        </div>
+        <div>
+            <label>URL:</label>
+        </div>
+        <div>
+            @Html.TextBoxFor(x => x.Url)
+        </div>
+        <input type="submit" value="Search" />
+    }
+</div>

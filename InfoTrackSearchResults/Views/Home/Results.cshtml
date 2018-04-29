@@ -1,8 +1,9 @@
-﻿@model InfoTrackSearchResults.Models.Results
+﻿@using InfoTrackSearchResults.Resources
+@model InfoTrackSearchResults.Models.Results
 @{
-    ViewBag.Title = "Results";
+    ViewBag.Title = Strings.ResultsPageTitle;
 }
 
-<h2>Results</h2>
+<h2>@Strings.ResultsText</h2>
 @Model.Rankings
 

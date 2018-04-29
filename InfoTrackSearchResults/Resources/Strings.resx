@@ -123,4 +123,10 @@
   <data name="HomePageTitle" xml:space="preserve">
     <value>Google Search Results</value>
   </data>
+  <data name="ResultsPageTitle" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="ResultsText" xml:space="preserve">
+    <value>Your website's rankings are:</value>
+  </data>
 </root>

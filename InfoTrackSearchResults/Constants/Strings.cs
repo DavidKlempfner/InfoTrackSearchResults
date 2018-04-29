@@ -8,5 +8,6 @@
         public const string Plus = "+";
         public const string HtmlTagDelimeter = "<cite>";
         public const string HtmlEndTagDelimeter = "</cite>";
+        public const string NoResultsIndicator = "0";
     }
 }

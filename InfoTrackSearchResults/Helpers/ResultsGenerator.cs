@@ -13,10 +13,12 @@ namespace InfoTrackSearchResults.Helpers
         public static string GetRankingsFormattedAsString(string webPageContent, string url)
         {
             List<int> rankings = GetRankings(webPageContent, url);
-
-            string rankingsSeparatedByCommas = string.Join(", ", rankings);
-
-            return rankingsSeparatedByCommas;
+            if (rankings.Any())
+            {
+                string rankingsSeparatedByCommas = string.Join(", ", rankings);
+                return rankingsSeparatedByCommas;
+            }
+            return Strings.NoResultsIndicator;
         }
 
         private static List<int> GetRankings(string webPageContent, string url)

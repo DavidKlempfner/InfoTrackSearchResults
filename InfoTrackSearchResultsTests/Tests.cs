@@ -62,7 +62,7 @@ namespace InfoTrackSearchResultsTests
             string actualRankings = ResultsGenerator.GetRankingsFormattedAsString(someRandomWebPageContent, infoTrackUrl);
 
             //Assert
-            Assert.IsTrue(string.IsNullOrEmpty(actualRankings));
+            Assert.AreEqual("0", actualRankings);
         }
     }
 }

@@ -12,10 +12,10 @@ namespace InfoTrackSearchResultsTests
         {
             //Arrange
             const string KeyWordsSpaceDelimited = "some key words";
-            const int MaxNumResults = 20;
+            const int MaxNumOfResults = 20;
 
             //Act
-            string actualUrl = UrlGenerator.GenerateGoogleSearchUrl(KeyWordsSpaceDelimited, MaxNumResults);
+            string actualUrl = UrlGenerator.GenerateGoogleSearchUrl(KeyWordsSpaceDelimited, MaxNumOfResults);
 
             //Assert
             const string ExpectedUrl = "https://www.google.com.au/search?q=some+key+words&num=20";
